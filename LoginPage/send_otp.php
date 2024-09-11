@@ -35,7 +35,7 @@ if (isset($_POST['sendOtp'])) {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            $mail->setFrom('kimiczarsaltingv2@gmail.com', 'Photography Studio Verification');
+            $mail->setFrom('kimiczarsaltingv2@gmail.com', 'GUI-no-tubig');
             $mail->addAddress($email);
 
             $mail->isHTML(true);
