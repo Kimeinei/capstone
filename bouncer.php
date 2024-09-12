@@ -13,7 +13,7 @@ if(isset($_POST['signIn'])){
     session_start();
     $row=$result->fetch_assoc();
     $_SESSION['email']=$row['email'];
-    header("Location: ../MainPage/main_page.html");
+    header("Location: MainPage/main_page.html");
     exit();
    }
    else{

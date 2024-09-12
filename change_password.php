@@ -22,7 +22,7 @@ if (isset($_POST['changePassword'])) {
         $deleteOtpQuery->bind_param("s", $email);
         $deleteOtpQuery->execute();
 
-        echo "<script>alert('Password successfully updated!'); window.location.href='index.php';</script>";
+        echo "<script>alert('Password successfully updated!'); window.location.href='index.html';</script>";
     } else {
         echo "Error updating password: " . $conn->error;
     }
