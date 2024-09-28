@@ -167,3 +167,25 @@ header {
     color: black;
     margin-bottom: 10px;
 }
+
+.or-divider {
+    text-align: center;
+    font-size: 1rem;
+    color: #757575;
+    margin: 1rem 0;
+}
+
+.login-guest {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.login-guest a {
+    text-decoration: none;
+    color: rgb(125, 125, 235);
+}
+
+.login-guest a:hover {
+    color: blue;
+    text-decoration: underline;
+}

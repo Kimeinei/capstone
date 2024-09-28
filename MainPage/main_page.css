@@ -121,7 +121,45 @@ body {
 
 .home-img .rhombus img {
     position: absolute;
-    right: 75px;
+    right: 55px;
     width: 400px;
     transform: rotate(-40deg);
+}
+
+.advisory-section {
+    background-color: #333; /* Darker background */
+    padding: 60px 8%;
+    color: #eaeaea; /* Light text for contrast */
+}
+
+.advisory-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advisory-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.advisory {
+    background-color: #222;
+    border: 2px solid #1743e3;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.advisory p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.advisory strong {
+    color: #eaeaea;
+}
+
+#advisory-date, #advisory-duration, #advisory-areas, #advisory-reason {
+    color: #f0f0f0;
 }
