@@ -14,10 +14,12 @@ if(isset($_POST['signIn'])){
       $row=$result->fetch_assoc();
       $_SESSION['email']=$row['email'];
 
-      if($row['user_type'] == 'consumer'){
+      if($row['user_type'] == 'employee'){
          $user_id = $row['id'];
-         header('refresh:3; MainPage/main_page.html');
-         ob_end_flush();
+         header("Location: MainPage/main_page.html");
+         exit();
+         // header('refresh:3; MainPage/main_page.html');
+         // ob_end_flush();
       }
       // elseif($row['user_type'] == 'admin'){
          
