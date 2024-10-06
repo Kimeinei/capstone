@@ -16,7 +16,7 @@ if(isset($_POST['signIn'])){
 
       if($row['user_type'] == 'employee'){
          $user_id = $row['id'];
-         header("Location: MainPage/main_page.html");
+         header("Location: dash_admin/dash_ad.php");
          exit();
          // header('refresh:3; MainPage/main_page.html');
          // ob_end_flush();
