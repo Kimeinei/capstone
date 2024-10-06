@@ -26,7 +26,7 @@
                 <i class="fas fa-user"></i>
                 <span class="nav-item">Manage Accounts</span>
             </a></li>
-            <li><a href="mngrpt.php">
+            <li><a href="mngrpt_ad.php">
                 <i class="fas fa-file"></i>
                 <span class="nav-item">Manage Reports</span>
             </a></li>
@@ -34,7 +34,7 @@
                 <i class="fas fa-edit"></i>
                 <span class="nav-item">Advisory</span>
             </a></li>
-            <li><a href="archive_ad.html">
+            <li><a href="archive_ad.php">
                 <i class="fas fa-book"></i>
                 <span class="nav-item">Archive</span>
             </a></li>
