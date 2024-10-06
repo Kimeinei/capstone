@@ -12,16 +12,30 @@ if (isset($_POST['signIn'])) {
     $sql->execute();
     $result = $sql->get_result();
 
+    $active = "online";
+
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $_SESSION['email'] = $row['email'];
 
         if ($row['user_type'] == 'employee') {
+            $user_id = $row['id'];
+            $_SESSION['user_id'] = $user_id;
+            $stmt = $conn->prepare("UPDATE users SET status = ? WHERE id = ?");
+            $stmt->bind_param("si", $active, $user_id); // "si" indicates string and integer
+            $stmt->execute();
+            $stmt->close();
             header("Location: dash_emp/dash_emp.php");
             exit();
         } 
         // Handle other user types
         else if ($row['user_type'] == 'admin') {
+            $user_id = $row['id'];
+            $_SESSION['user_id'] = $user_id;
+            $stmt = $conn->prepare("UPDATE users SET status = ? WHERE id = ?");
+            $stmt->bind_param("si", $active, $user_id); // "si" indicates string and integer
+            $stmt->execute();
+            $stmt->close();
             header("Location: dash_admin/dash_ad.php");
             exit();
         }
