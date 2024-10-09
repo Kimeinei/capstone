@@ -13,6 +13,7 @@
                 <a href="#" class="logo">
                     <img src="../photos/GUI-no-tubig.png" alt="logo">
                 </a>
+                <!-- Hello Boss  -->
             </li>
             <li><a href="dash_ad.php">
                 <i class="fas fa-home"></i>
@@ -28,7 +29,7 @@
             </a></li>
             <li><a href="mngrpt_ad.php">
                 <i class="fas fa-file"></i>
-                <span class="nav-item">Manage Reports</span>
+                <span class="nav-item">Manage Reports</span> 
             </a></li>
             <li><a href="advisory_ad.php">
                 <i class="fas fa-edit"></i>

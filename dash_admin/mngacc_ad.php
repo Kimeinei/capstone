@@ -41,12 +41,17 @@
             width: 100%; /* Full-width table */
             margin: 20px 0; /* Margin above and below the table */
             border-collapse: collapse; /* Collapsed borders */
+            font-size: 14px; /* Smaller font size for table */
         }
 
         th, td {
-            padding: 12px; /* Padding inside cells */
-            text-align: left; /* Left-align text */
-            border-bottom: 1px solid #ddd; /* Bottom border for rows */
+            max-width: 150px; /* Limit the maximum width of the table cells */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflowed content */
+            text-overflow: ellipsis; /* Add ellipsis (...) when text overflows */
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
         }
 
         th {
@@ -60,12 +65,13 @@
 
         /* Styles for action buttons */
         button {
-            padding: 8px 12px; /* Padding for buttons */
-            margin: 0 5px; /* Margin between buttons */
+            padding: 6px 10px; /* Smaller padding for buttons */
+            margin: 0 3px; /* Adjusted margin between buttons */
             background-color: #1743e3; /* Button background color */
             color: #ffffff; /* Text color */
             border: none; /* Remove border */
             border-radius: 4px; /* Rounded corners */
+            font-size: 12px; /* Smaller button text */
             cursor: pointer; /* Pointer cursor on hover */
             transition: background-color 0.3s ease; /* Smooth transition for background color */
         }
@@ -77,6 +83,7 @@
         button:focus {
             outline: none; /* Remove focus outline */
         }
+
     </style>
 </head>
 <body>
@@ -141,7 +148,7 @@
                 echo "<td>" . $row['lastName'] . "</td>";
                 echo "<td>" . $row['email'] . "</td>";
                 echo "<td>" . $row['user_type'] . "</td>";
-                echo "<td>" . $row['status'] . "</td>";
+                echo "<td>" . $row['status'] . "</td>";// Hi Kimi I am a Hacker
                 echo "<td>
                         <form action='mngacc_ad.php' method='POST' style='display:inline;'>
                             <input type='hidden' name='action' value='edit'>
